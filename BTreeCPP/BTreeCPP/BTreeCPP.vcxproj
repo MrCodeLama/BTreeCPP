@@ -128,10 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BTreeCPP.cpp" />
-    <ClCompile Include="RationalNum.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="RationalNum.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
