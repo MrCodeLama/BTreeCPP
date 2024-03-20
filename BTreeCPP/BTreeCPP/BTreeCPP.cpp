@@ -718,18 +718,26 @@ void traversal(BtreeNode* myNode) {
 int main() {
     RationalNumber val;
     int opt;
+    int n;
+    int i = 0;
     while (true) {
         cout << "1. Insertion\t2. Deletion\n";
         cout << "3. Searching\t4. Traversal\n";
         cout << "5. Exit\nEnter your choice: ";
         cin >> opt;
-        cout << endl;
+        cout << "\n";
         switch (opt) {
         case 1:
-            cout << "Enter your input (numerator denominator): ";
-            cin >> val.numerator >> val.denominator;
-            simplifyRational(val); // Simplify the rational number before insertion
-            insertion(val);
+            cout << "Enter number of values u want to add: ";
+            cin >> n;
+            cout << "\n";
+            for (; i < n; i++)
+            {
+                cout << "Enter your input (numerator denominator): ";
+                cin >> val.numerator >> val.denominator;
+                simplifyRational(val); // Simplify the rational number before insertion
+                insertion(val);
+            }
             break;
         case 2:
             cout << "Enter the element to delete (numerator denominator): ";
